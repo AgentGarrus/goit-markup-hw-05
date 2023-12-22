@@ -700,7 +700,7 @@ a {
     text-decoration-line: underline;
 }
 
-.span-icon {
+input:checked + label > span {
     background-color: #404BBF;
     border: none;
     fill: #F4F4FD;
