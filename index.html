@@ -444,7 +444,7 @@
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form" name="order">
           <div class="form-field">
-            <label class="form-label" for="user_name">Name</label>
+            <label for="user_name" class="form-label">Name</label>
             <div class="input-field">
               <input
                 class="form-input"
@@ -457,7 +457,7 @@
             </div>
           </div>
           <div class="form-field">
-            <label class="form-label" for="user_phone">Phone</label>
+            <label for="user_phone" class="form-label">Phone</label>
             <div class="input-field">
               <input
                 class="form-input"
@@ -470,7 +470,7 @@
             </div>
           </div>
           <div class="form-field">
-            <label class="form-label" for="user-email">Email</label>
+            <label for="user-email" class="form-label">Email</label>
             <div class="input-field">
               <input
                 class="form-input"
@@ -482,22 +482,32 @@
               </svg>
             </div>
           </div>
-          <div class="form-field">
-            <label class="form-label" for="comments">Comment</label>
-            <div class="input-field">
-              <input
-                class="form-comment"
-                type="text"
-                id="comments"
-                name="comments"
-                placeholder="text-input" />
-            </div>
+          <div class="comment-field">
+            <label for="user_comment" class="form-label">Comment</label>
+            <textarea
+              class="form-comment"
+              id="user_comment"
+              name="user_comment"
+              placeholder="text-input">
+            </textarea>
           </div>
-          <label class="form-label">
-            <input class="privacy" type="checkbox" name="privacy_policy" />
-            I accept the terms and conditions of the
-            <span class="checkbox-accent">Privacy Policy</span>
-          </label>
+          <div class="check-label">
+            <input
+              class="visually-hidden"
+              id="user_privacy"
+              type="checkbox"
+              value="true"
+              name="user_privacy" />
+            <label for="user_privacy" class="form-label"
+              >I accept the terms and conditions of the
+              <span class="checkbox-accent"
+                ><svg class="span-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Checkbox"></use>
+                </svg>
+              </span>
+              <a class="policy" href="">Privacy Policy</a>
+            </label>
+          </div>
           <button class="submit-btn" type="submit">Send</button>
         </form>
       </div>
