@@ -700,6 +700,12 @@ a {
     text-decoration-line: underline;
 }
 
+.span-icon {
+    background-color: #404BBF;
+    border: none;
+    fill: #F4F4FD;
+}
+
 .policy {
     color: #4D5AE5;
 }
