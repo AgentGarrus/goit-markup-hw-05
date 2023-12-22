@@ -435,25 +435,27 @@ a {
     height: 40px;
     flex-shrink: 0;
     border-radius: 4px;
+    color: #ffffff;
     border: 1px solid #FFFFFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding-left:16px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2px;
+    letter-spacing: 0.04em;
     background-color: transparent;
     outline: transparent;
 }
 
 .mail-input::placeholder {
     color: #ffffff;
-    padding: 8px 16px;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.48px;
 }
 
 .sub-btn {
     display: flex;
     align-items: center;
-    gap: 16px;
+    justify-content: center;
+    min-width: 165px;
     padding: 8px 24px;
     color:#FFFFFF;
     font-size: 16px;
@@ -463,10 +465,12 @@ a {
     border-radius: 4px;
     background:#4D5AE5;
     border: none;
+    cursor: pointer;
 }
 
 .sub-icon {
     fill: #ffffff;
+    margin-left: 16px;
 }
 
 .footertext {
